@@ -2,21 +2,21 @@ const Discord = require('discord.js');
 
 // BASE DE DONNES
 
-const low = require('lowdb')
-const FileSync = require('lowdb/adapters/FileSync')
+//const low = require('lowdb')
+//const FileSync = require('lowdb/adapters/FileSync')
 
-const adapter = new FileSync('database.json')
-const db = low(adapter);
+//const adapter = new FileSync('database.json')
+//const db = low(adapter);
 
-var citationsnumber = db.get('citations').size().value();
+//var citationsnumber = db.get('citations').size().value();
 
 // TABLE POUR BASE DE DONNES
 
-db.defaults({ citations: []})
+//db.defaults({ citations: []})
     .write()
 
 
-var citationsnumber = db.get('citations').size().value();
+//var citationsnumber = db.get('citations').size().value();
 
 // VAR !
 
@@ -113,37 +113,37 @@ bot.on('message', message => {
 
 // BASE DE DONNES
 
-    if (!message.content.startsWith(prefix)) return;
+  // // if (!message.content.startsWith(prefix)) return;
     var args = message.content.substring(prefix.length).split(" ");
 
-    switch (args[0].toLowerCase()){
+   // switch (args[0].toLowerCase()){
 
-        case "addcitation":
-        var value = message.content.substr(12);
-        var author = message.author.toString();
+      //  case "addcitation":
+      //  var value = message.content.substr(12);
+      //  var author = message.author.toString();
         //var citationsid = Math(number + 1);
-        console.log(value);
-        message.reply("Citations ajoutée à la base de données")
+      //  console.log(value);
+       // message.reply("Citations ajoutée à la base de données")
         
-        db.get('citations')
-            .push({ citations_value: value, citations_author: author})
-            .write();
+       // db.get('citations')
+         //   .push({ citations_value: value, citations_author: author})
+         //   .write();
 
-            break;
+          //  break;
             
-                    case "citation" :
+                   // case "citation" :
                     
-                            citations_random();
-                            console.log(citations);
+                           // citations_random();
+                           // console.log(citations);
                     
-                            var citation = db.get(`citations[${citations}].citations_value`).toString().value();
-                            var citations_author = db.get(`citations[${citations}].citations_author`).toString().value();
-                            console.log(citations);
+                           // var citation = db.get(`citations[${citations}].citations_value`).toString().value();
+                           // var citations_author = db.get(`citations[${citations}].citations_author`).toString().value();
+                           // console.log(citations);
                     
-                            message.channel.send(`${citation} (citation de ${citations_author})`)
+                           // message.channel.send(`${citation} (citation de ${citations_author})`)
                             
-                            break; 
-                }
+                           // break; 
+               // }
 
 })
 
