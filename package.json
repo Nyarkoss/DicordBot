@@ -1,0 +1,33 @@
+{
+  "name": "naruto",
+  "version": "1.0.0",
+  "description": "L'univers de Naruto sur votre serveur",
+  "author": "nyarkoss",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nyarkoss/naruto-bot"
+  },
+  "bugs": {
+    "url": "https://github.com/nyarkoss/naruto-bot/issues"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "chalk": "^1.1.3",
+    "cheerio": "^0.22.0",
+    "concat-stream": "^1.6.0",
+    "discord.js": "^11.1.0",
+    "form-data": "^2.1.4",
+    "google-translate-api": "^2.2.2",
+    "jimp": "^0.2.27",
+    "kitsu.js": "^1.1.0",
+    "knex": "^0.12.6",
+    "request": "^2.74.0",
+    "sqlite3": "^3.1.8",
+    "xml2js": "^0.4.17"
+  }
+}
