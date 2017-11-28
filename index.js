@@ -33,7 +33,7 @@ bot.on('ready', () => {
 
 // LOGIN 
 
-bot.login('Mzg0NDcwMzMyODM0MTg1MjE2.DPzU9A.bZNKhmsEN0R3GUXtNRHvTgpQDqE');
+bot.login(process.env.TOKEN);
 
 // FONCTIONS
 
