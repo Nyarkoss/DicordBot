@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "L'univers de Naruto sur votre serveur",
   "author": "nyarkoss",
-  "main": "main.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/nyarkoss/naruto-bot"
